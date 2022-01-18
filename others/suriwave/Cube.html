@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ルービックキューブ</title>
+<script type="text/javascript" src="Cube.js"></script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<section>
+<article>
+<p>	
+<div align="center">
+	<canvas id="canvas_plane" width="1600" height="750"></canvas>
+</div>
+<button type="button" name="FU" onclick="FU()" style="font-size:250%">FU'</button>
+<label id="labelFU" style="font-size:250%">0</label>
+<span style="margin-right:2em"></span>
+<button name="FUFU" onclick="FUFU()" style="font-size:250%">FU'F'U</button>
+<label id="labelFUFU" style="font-size:250%">0</label>
+<span style="margin-right:2em"></span>
+<button name="Five" onclick="rotationFive()" style="font-size:250%">R'URU</button>
+<label id="labelFive" style="font-size:250%">0</label>
+<span style="margin-right:2em"></span>
+<button name="Seven" onclick="rotationSeven()" style="font-size:250%">(DDR)^2(UUL)^2</button>
+<label id="labelSeven" style="font-size:250%">0</label>
+<span style="margin-right:2em"></span>
+<button name="Eleven" onclick="rotationEleven()" style="font-size:250%">(R'UF'L)^3</button>
+<label id="labelEleven" style="font-size:250%">0</label>
+<span style="margin-right:2em"></span>
+<button name="Longest" onclick="rotationLongest()" style="font-size:250%">RFFB'UB'</button>
+<label id="labelLongest" style="font-size:250%">0</label>
+<span style="margin-right:1em"></span>
+Last modified 2018年6月22日
+</p>
+</article>
+</section>
+</body>
+</html>
