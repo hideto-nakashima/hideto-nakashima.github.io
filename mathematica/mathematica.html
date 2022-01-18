@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	<title>
+		Homepage of h-nakashima
+	</title>
+	<link rel="stylesheet" type="text/css" href="../styfile.css">
+</head>
+<body>
+	<!-- <base target="_blank"> -->
+<section>
+	<article>
+		<h2>Mathematica</h2>
+		<table>
+			<tr>
+				<td>
+					<p>
+					Mathematicaを用いたちょっとしたアプリケーションを作っています．
+					気が向いたら，少しずつ増やしていきます．
+					因みに，Internet Explorer推奨です．
+					Chromeでは非対応のため，WEB上でみることはできません
+					（他のブラウザは試していません)．
+					</p>
+					<p>
+					Chromeでは上記のリンクをクリックすると，
+					cdfファイルがDLされます．
+					これは以下の外部サイトでWolfram cdf playerをDLすれば，
+					見ることができます(無料，しかし要メールアドレス)．
+					
+					<div align="center">
+						<a href="https://www.wolfram.com/cdf-player/">https://www.wolfram.com/cdf-player/</a>
+					</div>
+					</p>		
+				</td>
+			</tr>
+      <tr>
+				<td><h3>線形代数</h3></td>
+			</tr>
+			<tr>
+				<td>
+					<p>
+					行列は，線形写像という側面もあります．
+          ここでは，その行列の線形写像としての作用を目で見えるようにアニメーションとして表現しています．
+					Mathematicaの特性からか，なぜか平行四辺形の角がとれておかしなことになっていますが，
+					実際はちゃんと平行四辺形です．
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<table width="95%">
+						<tr>
+						<td width="24%" align="center"><a href="sources\slide.cdf" width="700" height="600">平行移動</a></td>
+						<td width="24%" align="center"><a href="sources\reflection.cdf" width="700" height="600">鏡映その１</a></td>
+						<td width="24%" align="center"><a href="sources\reflection2.cdf" width="700" height="600">鏡映その２</a></td>
+						<td width="24%" align="center"><a href="sources\rotation.cdf" width="700" height="600">回転行列</a></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<h3>微分積分</h3>		
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Taylor展開は，解析的な関数を多項式で表現できるという，非常に便利な公式です．
+					次の例では，サイン関数
+					\begin{align*}\sin(x)=\lim_{N\rightarrow\infty}\sum_{n=0}^N \frac{(-1)^n}{(2n+1)!}x^{2n+1}\end{align*}
+          が，
+					\( N \) を大きくしていったときに，
+					どのように収束していくかをマニピュレート機能を用いて表現したものです．
+					\begin{align*}x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \frac{x^9}{9!} - \frac{x^{11}}{11!} + \cdots + (-1)^{2N+1}\frac{x^{2N+1}}{(2N+1)!}. \end{align*}
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<table width="95%">
+						<tr>
+						<td width="24%" align="center"><a href="sources\taylorSin.cdf" width="700" height="600">正弦関数</a></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<p align=right>Last modified 2016年5月2日</p>
+	</article>
+</section>
+<footer>
+	<p><a href="../jaindex.html">ホームページに戻る</a></p>
+</footer>
+</body>
+</html>
