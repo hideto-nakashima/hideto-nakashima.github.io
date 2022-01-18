@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>回転行列の作用</title>
+<script type="text/javascript" src="sources/rotation.js"></script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<link rel="stylesheet" type="text/css" href="../../styfile.css">
+</head>
+<body>
+<section>
+<article>
+<h2>回転行列の作用</h2>
+<div>
+	平面の図形に2次の正方行列を作用させると，
+	回転したり，歪んだり，あるいは潰れて線分になってしまったりする．
+	このページでは，その行列が回転行列
+	\begin{align*}
+		P(\theta)=\begin{pmatrix} \cos \theta & - \sin \theta\\ \sin \theta & \cos \theta \end{pmatrix}
+	\end{align*}
+	であるときについて扱っている．
+	回転行列という名前の通り，
+	この行列を作用させると，
+	平面上の図形は``回転''する．
+	下にあるアプリケーションでは，
+	<p align="center">
+	正方形に作用する回転行列
+	\(P(\theta)\)
+	の角度 \(\theta\) を連続的に動かしたときに，
+	正方形はどのように動くか
+	</p>
+	ということを，
+	キーボードの左右キー（←と→）で操作して見て取れるようにしたものです．
+	ソースコードは<a href="sources/rotation.js">こちら</a>．
+</div>
+<p>
+	操作方法：<br>
+	←（キーボードの左キー）：角度 \(\theta\) を増加させる．<br>
+	→（キーボードの右キー）：角度 \(\theta\) を減少させる．
+</p>
+<div align="center">
+	<canvas id="canvas_plane" width="600" height="600"></canvas>
+</div>
+<p align=right>Last modified 2017年5月30日</p>
+</article>
+</section>
+<footer>
+	<p><a href="../jaindex.html">ホームページに戻る</a></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>多変数関数の連続性について</title>
+<script type="text/javascript" src="sources/multivariatefunction.js"></script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<link rel="stylesheet" type="text/css" href="../../styfile.css">
+</head>
+<body>
+<section>
+<article>
+<h2>2変数関数の連続性について</h2>
+<div>
+	一般に，多変数関数の連続性は，1変数関数よりも強い条件である．
+	例えば，次のような簡単な2変数関数ですら，その連続性は複雑である．
+	\begin{align*}
+		f(x,y)=\frac{xy}{x^2+y^2}\quad(x,y)\ne(0,0),\quad f(0,0)=0.
+	\end{align*}
+	実際，問題となるのは原点のときであるが，直線
+	\( y=ax \)
+	に沿っての極限を考えると
+	\( x\ne 0\)
+	のとき
+	\( f(x,ax)=\frac{a}{1+a^2} \)
+	であるので,
+	曲面
+	\( z=f(x,y) \)
+	の，
+	直線
+	\( y=ax \)
+	上での切片は次のようになる.
+	このページ下方にある
+	mathematica
+	によるグラフと合わせてみるとより深く理解できるだろう．
+<p>	
+<div align="center">
+	<canvas id="canvas_plane" width="600" height="250"></canvas>
+</div>
+</p>
+<p>
+	右側の円は
+	\( (x,y) \)
+	平面を上から見たときに，
+	直線
+	\( y=ax \)
+	の傾きを表している．
+	ここで theta は
+	\( a=\tan \theta \)
+	である
+	(単位は度数法で与えている)．
+	そして右側のグラフは，
+	その直線上での	曲面
+	\( z=f(x,y) \)
+	の切片である．	
+</p>
+<p>
+	操作方法：<br>
+	←（キーボードの左キー）：パラメータ \( \theta \) を減少させる．<br>
+	→（キーボードの右キー）：パラメータ \( \theta \) を増加させる．
+</p>
+<p>
+以下にmathematicaで作成した3Dグラフを用意しました．
+図形をドラッグすることにより，回転させることができます．
+原点付近において，複雑な振る舞いをしていることが見て取れると思います．
+これはIEで実行することができます．
+また，Chromeの場合は一度ダウンロードして，Wolfram cdf playerにて実行することになります．
+他のブラウザでは試していないので分かりません．
+<div align="center">
+<a href="../..\mathematica\sources\non_continuous_functions.cdf" width="700" height="600">3DPlot</a>
+</div>
+</p>
+<p align=right>Last modified 2017年10月18日</p>
+</article>
+</section>
+<footer>
+	<p><a href="../jaindex.html">ホームページに戻る</a></p>
+</footer>
+</body>
+</html>
