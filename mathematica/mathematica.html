@@ -17,17 +17,17 @@
 			<tr>
 				<td>
 					<p>
-					Mathematica��p����������Ƃ����A�v���P�[�V����������Ă��܂��D
-					�C����������C���������₵�Ă����܂��D
-					���݂ɁCInternet Explorer�����ł��D
-					Chrome�ł͔�Ή��̂��߁CWEB��ł݂邱�Ƃ͂ł��܂���
-					�i���̃u���E�U�͎����Ă��܂���)�D
+					Mathematicaを用いたちょっとしたアプリケーションを作っています．
+					気が向いたら，少しずつ増やしていきます．
+					因みに，Internet Explorer推奨です．
+					Chromeでは非対応のため，WEB上でみることはできません
+					（他のブラウザは試していません)．
 					</p>
 					<p>
-					Chrome�ł͏�L�̃����N���N���b�N����ƁC
-					cdf�t�@�C����DL����܂��D
-					����͈ȉ��̊O���T�C�g��Wolfram cdf player��DL����΁C
-					���邱�Ƃ��ł��܂�(�����C�������v���[���A�h���X)�D
+					Chromeでは上記のリンクをクリックすると，
+					cdfファイルがDLされます．
+					これは以下の外部サイトでWolfram cdf playerをDLすれば，
+					見ることができます(無料，しかし要メールアドレス)．
 					
 					<div align="center">
 						<a href="https://www.wolfram.com/cdf-player/">https://www.wolfram.com/cdf-player/</a>
@@ -36,15 +36,15 @@
 				</td>
 			</tr>
       <tr>
-				<td><h3>���`�㐔</h3></td>
+				<td><h3>線形代数</h3></td>
 			</tr>
 			<tr>
 				<td>
 					<p>
-					�s��́C���`�ʑ��Ƃ������ʂ�����܂��D
-          �����ł́C���̍s��̐��`�ʑ��Ƃ��Ă̍�p��ڂŌ�����悤�ɃA�j���[�V�����Ƃ��ĕ\�����Ă��܂��D
-					Mathematica�̓������炩�C�Ȃ������s�l�ӌ`�̊p���Ƃ�Ă������Ȃ��ƂɂȂ��Ă��܂����C
-					���ۂ͂����ƕ��s�l�ӌ`�ł��D
+					行列は，線形写像という側面もあります．
+          ここでは，その行列の線形写像としての作用を目で見えるようにアニメーションとして表現しています．
+					Mathematicaの特性からか，なぜか平行四辺形の角がとれておかしなことになっていますが，
+					実際はちゃんと平行四辺形です．
 					</p>
 				</td>
 			</tr>
@@ -52,27 +52,27 @@
 				<td>
 					<table width="95%">
 						<tr>
-						<td width="24%" align="center"><a href="sources\slide.cdf" width="700" height="600">���s�ړ�</a></td>
-						<td width="24%" align="center"><a href="sources\reflection.cdf" width="700" height="600">���f���̂P</a></td>
-						<td width="24%" align="center"><a href="sources\reflection2.cdf" width="700" height="600">���f���̂Q</a></td>
-						<td width="24%" align="center"><a href="sources\rotation.cdf" width="700" height="600">��]�s��</a></td>
+						<td width="24%" align="center"><a href="sources\slide.cdf" width="700" height="600">平行移動</a></td>
+						<td width="24%" align="center"><a href="sources\reflection.cdf" width="700" height="600">鏡映その１</a></td>
+						<td width="24%" align="center"><a href="sources\reflection2.cdf" width="700" height="600">鏡映その２</a></td>
+						<td width="24%" align="center"><a href="sources\rotation.cdf" width="700" height="600">回転行列</a></td>
 						</tr>
 					</table>
 				</td>
 			</tr>
 			<tr>
 				<td>
-					<h3>�����ϕ�</h3>		
+					<h3>微分積分</h3>		
 				</td>
 			</tr>
 			<tr>
 				<td>
-					Taylor�W�J�́C��͓I�Ȋ֐��𑽍����ŕ\���ł���Ƃ����C���ɕ֗��Ȍ����ł��D
-					���̗�ł́C�T�C���֐�
+					Taylor展開は，解析的な関数を多項式で表現できるという，非常に便利な公式です．
+					次の例では，サイン関数
 					\begin{align*}\sin(x)=\lim_{N\rightarrow\infty}\sum_{n=0}^N \frac{(-1)^n}{(2n+1)!}x^{2n+1}\end{align*}
-          ���C
-					\( N \) ��傫�����Ă������Ƃ��ɁC
-					�ǂ̂悤�Ɏ������Ă��������}�j�s�����[�g�@�\��p���ĕ\���������̂ł��D
+          が，
+					\( N \) を大きくしていったときに，
+					どのように収束していくかをマニピュレート機能を用いて表現したものです．
 					\begin{align*}x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \frac{x^9}{9!} - \frac{x^{11}}{11!} + \cdots + (-1)^{2N+1}\frac{x^{2N+1}}{(2N+1)!}. \end{align*}
 				</td>
 			</tr>
@@ -80,17 +80,17 @@
 				<td>
 					<table width="95%">
 						<tr>
-						<td width="24%" align="center"><a href="sources\taylorSin.cdf" width="700" height="600">�����֐�</a></td>
+						<td width="24%" align="center"><a href="sources\taylorSin.cdf" width="700" height="600">正弦関数</a></td>
 						</tr>
 					</table>
 				</td>
 			</tr>
 		</table>
-		<p align=right>Last modified 2016�N5��2��</p>
+		<p align=right>Last modified 2016年5月2日</p>
 	</article>
 </section>
 <footer>
-	<p><a href="../jaindex.html">�z�[���y�[�W�ɖ߂�</a></p>
+	<p><a href="../jaindex.html">ホームページに戻る</a></p>
 </footer>
 </body>
 </html>
