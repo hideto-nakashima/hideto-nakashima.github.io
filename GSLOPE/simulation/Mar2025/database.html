@@ -1,0 +1,838 @@
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css" rel="stylesheet"/>
+    <link href="https://cdn.datatables.net/v/zf/jq-3.6.0/dt-1.13.4/b-2.3.6/b-html5-2.3.6/date-1.4.1/fh-3.3.2/sb-1.4.2/datatables.min.css" rel="stylesheet"/>
+ 
+    <script src="https://cdn.datatables.net/v/zf/jq-3.6.0/dt-1.13.4/b-2.3.6/b-html5-2.3.6/date-1.4.1/fh-3.3.2/sb-1.4.2/datatables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+
+    <script>
+        $(document).ready(function() {$('.my-table').DataTable({
+            select: true,
+            displayLength: 25,
+            buttons: ['copy'],
+            fixedHeader: true,
+            dom: 'iQrtBlp',
+        });})
+    </script>
+    <table border="1" class="dataframe my-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>tag</th>
+      <th>png</th>
+      <th>graph</th>
+      <th>lambdas</th>
+      <th>min_n</th>
+      <th>max_n</th>
+      <th>p's</th>
+      <th>div-k</th>
+      <th>lam-c</th>
+      <th>g-div</th>
+      <th>N</th>
+      <th>d1</th>
+      <th>rseed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td><a href='data/20250326-082450/20250326-082450.csv' target='_blank'> 20250326-082450</a></td>
+      <td><a href='data/20250326-082450/20250326-082450_1.png' target='_blank'><img src='data/20250326-082450/20250326-082450_1.png' width='300' target='_blank' /></a></td>
+      <td>full (1param)</td>
+      <td>6</td>
+      <td>39000</td>
+      <td>40000.0</td>
+      <td>24_30_36_42</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>10</td>
+      <td>1</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td><a href='data/20250326-082915/20250326-082915.csv' target='_blank'> 20250326-082915</a></td>
+      <td><a href='data/20250326-082915/20250326-082915_1.png' target='_blank'><img src='data/20250326-082915/20250326-082915_1.png' width='300' target='_blank' /></a></td>
+      <td>chain</td>
+      <td>0</td>
+      <td>2000</td>
+      <td>6000.0</td>
+      <td>36_64_100_144</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td><a href='data/20250326-122410/20250326-122410.csv' target='_blank'> 20250326-122410</a></td>
+      <td><a href='data/20250326-122410/20250326-122410_1.png' target='_blank'><img src='data/20250326-122410/20250326-122410_1.png' width='300' target='_blank' /></a></td>
+      <td>chain</td>
+      <td>1</td>
+      <td>2000</td>
+      <td>6000.0</td>
+      <td>36_64_100_144</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td><a href='data/20250326-151953/20250326-151953.csv' target='_blank'> 20250326-151953</a></td>
+      <td><a href='data/20250326-151953/20250326-151953_1.png' target='_blank'><img src='data/20250326-151953/20250326-151953_1.png' width='300' target='_blank' /></a></td>
+      <td>chain</td>
+      <td>2</td>
+      <td>2000</td>
+      <td>6000.0</td>
+      <td>36_64_100_144</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td><a href='data/20250326-184408/20250326-184408.csv' target='_blank'> 20250326-184408</a></td>
+      <td><a href='data/20250326-184408/20250326-184408_1.png' target='_blank'><img src='data/20250326-184408/20250326-184408_1.png' width='300' target='_blank' /></a></td>
+      <td>chain</td>
+      <td>5</td>
+      <td>2000</td>
+      <td>6000.0</td>
+      <td>36_64_100_144</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td><a href='data/20250326-214304/20250326-214304.csv' target='_blank'> 20250326-214304</a></td>
+      <td><a href='data/20250326-214304/20250326-214304_1.png' target='_blank'><img src='data/20250326-214304/20250326-214304_1.png' width='300' target='_blank' /></a></td>
+      <td>chain</td>
+      <td>6</td>
+      <td>2000</td>
+      <td>6000.0</td>
+      <td>36_64_100_144</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td><a href='data/20250327-073632/20250327-073632.csv' target='_blank'> 20250327-073632</a></td>
+      <td><a href='data/20250327-073632/20250327-073632_1.png' target='_blank'><img src='data/20250327-073632/20250327-073632_1.png' width='300' target='_blank' /></a></td>
+      <td>grid</td>
+      <td>0</td>
+      <td>2500</td>
+      <td>15000.0</td>
+      <td>6_8_10_12</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td><a href='data/20250327-100239/20250327-100239.csv' target='_blank'> 20250327-100239</a></td>
+      <td><a href='data/20250327-100239/20250327-100239_1.png' target='_blank'><img src='data/20250327-100239/20250327-100239_1.png' width='300' target='_blank' /></a></td>
+      <td>grid</td>
+      <td>1</td>
+      <td>2500</td>
+      <td>15000.0</td>
+      <td>6_8_10_12</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td><a href='data/20250327-113843/20250327-113843.csv' target='_blank'> 20250327-113843</a></td>
+      <td><a href='data/20250327-113843/20250327-113843_1.png' target='_blank'><img src='data/20250327-113843/20250327-113843_1.png' width='300' target='_blank' /></a></td>
+      <td>grid</td>
+      <td>2</td>
+      <td>2500</td>
+      <td>15000.0</td>
+      <td>6_8_10_12</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td><a href='data/20250327-131641/20250327-131641.csv' target='_blank'> 20250327-131641</a></td>
+      <td><a href='data/20250327-131641/20250327-131641_1.png' target='_blank'><img src='data/20250327-131641/20250327-131641_1.png' width='300' target='_blank' /></a></td>
+      <td>grid</td>
+      <td>5</td>
+      <td>2500</td>
+      <td>15000.0</td>
+      <td>6_8_10_12</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td><a href='data/20250327-145015/20250327-145015.csv' target='_blank'> 20250327-145015</a></td>
+      <td><a href='data/20250327-145015/20250327-145015_1.png' target='_blank'><img src='data/20250327-145015/20250327-145015_1.png' width='300' target='_blank' /></a></td>
+      <td>grid</td>
+      <td>6</td>
+      <td>2500</td>
+      <td>15000.0</td>
+      <td>6_8_10_12</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td><a href='data/20250327-162802/20250327-162802.csv' target='_blank'> 20250327-162802</a></td>
+      <td><a href='data/20250327-162802/20250327-162802_1.png' target='_blank'><img src='data/20250327-162802/20250327-162802_1.png' width='300' target='_blank' /></a></td>
+      <td>full (1param)</td>
+      <td>0</td>
+      <td>15000</td>
+      <td>40000.0</td>
+      <td>24_30_36_42</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td><a href='data/20250327-163724/20250327-163724.csv' target='_blank'> 20250327-163724</a></td>
+      <td><a href='data/20250327-163724/20250327-163724_1.png' target='_blank'><img src='data/20250327-163724/20250327-163724_1.png' width='300' target='_blank' /></a></td>
+      <td>full (1param)</td>
+      <td>0</td>
+      <td>150000</td>
+      <td>400000.0</td>
+      <td>24_30_36_42</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td><a href='data/20250327-164732/20250327-164732.csv' target='_blank'> 20250327-164732</a></td>
+      <td><a href='data/20250327-164732/20250327-164732_1.png' target='_blank'><img src='data/20250327-164732/20250327-164732_1.png' width='300' target='_blank' /></a></td>
+      <td>full (1param)</td>
+      <td>0</td>
+      <td>75000</td>
+      <td>200000.0</td>
+      <td>24_30_36_42</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td><a href='data/20250327-165550/20250327-165550.csv' target='_blank'> 20250327-165550</a></td>
+      <td><a href='data/20250327-165550/20250327-165550_1.png' target='_blank'><img src='data/20250327-165550/20250327-165550_1.png' width='300' target='_blank' /></a></td>
+      <td>full (1param)</td>
+      <td>1</td>
+      <td>75000</td>
+      <td>200000.0</td>
+      <td>24_30_36_42</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td><a href='data/20250327-170115/20250327-170115.csv' target='_blank'> 20250327-170115</a></td>
+      <td><a href='data/20250327-170115/20250327-170115_1.png' target='_blank'><img src='data/20250327-170115/20250327-170115_1.png' width='300' target='_blank' /></a></td>
+      <td>full (1param)</td>
+      <td>2</td>
+      <td>75000</td>
+      <td>200000.0</td>
+      <td>24_30_36_42</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td><a href='data/20250327-171512/20250327-171512.csv' target='_blank'> 20250327-171512</a></td>
+      <td><a href='data/20250327-171512/20250327-171512_1.png' target='_blank'><img src='data/20250327-171512/20250327-171512_1.png' width='300' target='_blank' /></a></td>
+      <td>full (1param)</td>
+      <td>5</td>
+      <td>75000</td>
+      <td>200000.0</td>
+      <td>24_30_36_42</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td><a href='data/20250327-172916/20250327-172916.csv' target='_blank'> 20250327-172916</a></td>
+      <td><a href='data/20250327-172916/20250327-172916_1.png' target='_blank'><img src='data/20250327-172916/20250327-172916_1.png' width='300' target='_blank' /></a></td>
+      <td>full (1param)</td>
+      <td>6</td>
+      <td>75000</td>
+      <td>200000.0</td>
+      <td>24_30_36_42</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td><a href='data/20250327-174119/20250327-174119.csv' target='_blank'> 20250327-174119</a></td>
+      <td><a href='data/20250327-174119/20250327-174119_1.png' target='_blank'><img src='data/20250327-174119/20250327-174119_1.png' width='300' target='_blank' /></a></td>
+      <td>full (1param)</td>
+      <td>0</td>
+      <td>37500</td>
+      <td>100000.0</td>
+      <td>24_30_36_42</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td><a href='data/20250327-174951/20250327-174951.csv' target='_blank'> 20250327-174951</a></td>
+      <td><a href='data/20250327-174951/20250327-174951_1.png' target='_blank'><img src='data/20250327-174951/20250327-174951_1.png' width='300' target='_blank' /></a></td>
+      <td>full (1param)</td>
+      <td>1</td>
+      <td>37500</td>
+      <td>100000.0</td>
+      <td>24_30_36_42</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td><a href='data/20250327-175515/20250327-175515.csv' target='_blank'> 20250327-175515</a></td>
+      <td><a href='data/20250327-175515/20250327-175515_1.png' target='_blank'><img src='data/20250327-175515/20250327-175515_1.png' width='300' target='_blank' /></a></td>
+      <td>full (1param)</td>
+      <td>2</td>
+      <td>37500</td>
+      <td>100000.0</td>
+      <td>24_30_36_42</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td><a href='data/20250327-180507/20250327-180507.csv' target='_blank'> 20250327-180507</a></td>
+      <td><a href='data/20250327-180507/20250327-180507_1.png' target='_blank'><img src='data/20250327-180507/20250327-180507_1.png' width='300' target='_blank' /></a></td>
+      <td>full (1param)</td>
+      <td>5</td>
+      <td>37500</td>
+      <td>100000.0</td>
+      <td>24_30_36_42</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td><a href='data/20250327-182001/20250327-182001.csv' target='_blank'> 20250327-182001</a></td>
+      <td><a href='data/20250327-182001/20250327-182001_1.png' target='_blank'><img src='data/20250327-182001/20250327-182001_1.png' width='300' target='_blank' /></a></td>
+      <td>full (1param)</td>
+      <td>6</td>
+      <td>37500</td>
+      <td>100000.0</td>
+      <td>24_30_36_42</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td><a href='data/20250327-194638/20250327-194638.csv' target='_blank'> 20250327-194638</a></td>
+      <td><a href='data/20250327-194638/20250327-194638_1.png' target='_blank'><img src='data/20250327-194638/20250327-194638_1.png' width='300' target='_blank' /></a></td>
+      <td>chain</td>
+      <td>0</td>
+      <td>2000</td>
+      <td>6000.0</td>
+      <td>36_64_100_144</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>573</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td><a href='data/20250328-080021/20250328-080021.csv' target='_blank'> 20250328-080021</a></td>
+      <td><a href='data/20250328-080021/20250328-080021_1.png' target='_blank'><img src='data/20250328-080021/20250328-080021_1.png' width='300' target='_blank' /></a></td>
+      <td>chain</td>
+      <td>1</td>
+      <td>2000</td>
+      <td>6000.0</td>
+      <td>36_64_100_144</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>573</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td><a href='data/20250328-103355/20250328-103355.csv' target='_blank'> 20250328-103355</a></td>
+      <td><a href='data/20250328-103355/20250328-103355_1.png' target='_blank'><img src='data/20250328-103355/20250328-103355_1.png' width='300' target='_blank' /></a></td>
+      <td>chain</td>
+      <td>2</td>
+      <td>2000</td>
+      <td>6000.0</td>
+      <td>36_64_100_144</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>573</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td><a href='data/20250328-132844/20250328-132844.csv' target='_blank'> 20250328-132844</a></td>
+      <td><a href='data/20250328-132844/20250328-132844_1.png' target='_blank'><img src='data/20250328-132844/20250328-132844_1.png' width='300' target='_blank' /></a></td>
+      <td>chain</td>
+      <td>5</td>
+      <td>2000</td>
+      <td>6000.0</td>
+      <td>36_64_100_144</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>573</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td><a href='data/20250328-162803/20250328-162803.csv' target='_blank'> 20250328-162803</a></td>
+      <td><a href='data/20250328-162803/20250328-162803_1.png' target='_blank'><img src='data/20250328-162803/20250328-162803_1.png' width='300' target='_blank' /></a></td>
+      <td>chain</td>
+      <td>6</td>
+      <td>2000</td>
+      <td>6000.0</td>
+      <td>36_64_100_144</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>573</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td><a href='data/20250328-190320/20250328-190320.csv' target='_blank'> 20250328-190320</a></td>
+      <td><a href='data/20250328-190320/20250328-190320_1.png' target='_blank'><img src='data/20250328-190320/20250328-190320_1.png' width='300' target='_blank' /></a></td>
+      <td>grid</td>
+      <td>0</td>
+      <td>2500</td>
+      <td>15000.0</td>
+      <td>6_8_10_12</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>573</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td><a href='data/20250328-204056/20250328-204056.csv' target='_blank'> 20250328-204056</a></td>
+      <td><a href='data/20250328-204056/20250328-204056_1.png' target='_blank'><img src='data/20250328-204056/20250328-204056_1.png' width='300' target='_blank' /></a></td>
+      <td>grid</td>
+      <td>1</td>
+      <td>2500</td>
+      <td>15000.0</td>
+      <td>6_8_10_12</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>573</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td><a href='data/20250329-111541/20250329-111541.csv' target='_blank'> 20250329-111541</a></td>
+      <td><a href='data/20250329-111541/20250329-111541_1.png' target='_blank'><img src='data/20250329-111541/20250329-111541_1.png' width='300' target='_blank' /></a></td>
+      <td>grid</td>
+      <td>2</td>
+      <td>2500</td>
+      <td>15000.0</td>
+      <td>6_8_10_12</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>573</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td><a href='data/20250329-125045/20250329-125045.csv' target='_blank'> 20250329-125045</a></td>
+      <td><a href='data/20250329-125045/20250329-125045_1.png' target='_blank'><img src='data/20250329-125045/20250329-125045_1.png' width='300' target='_blank' /></a></td>
+      <td>grid</td>
+      <td>5</td>
+      <td>2500</td>
+      <td>15000.0</td>
+      <td>6_8_10_12</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>573</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td><a href='data/20250329-142359/20250329-142359.csv' target='_blank'> 20250329-142359</a></td>
+      <td><a href='data/20250329-142359/20250329-142359_1.png' target='_blank'><img src='data/20250329-142359/20250329-142359_1.png' width='300' target='_blank' /></a></td>
+      <td>grid</td>
+      <td>6</td>
+      <td>2500</td>
+      <td>15000.0</td>
+      <td>6_8_10_12</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>573</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td><a href='data/20250329-162611/20250329-162611.csv' target='_blank'> 20250329-162611</a></td>
+      <td><a href='data/20250329-162611/20250329-162611_1.png' target='_blank'><img src='data/20250329-162611/20250329-162611_1.png' width='300' target='_blank' /></a></td>
+      <td>full (1param)</td>
+      <td>0</td>
+      <td>15000</td>
+      <td>40000.0</td>
+      <td>24_30_36_42</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>573</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td><a href='data/20250329-163609/20250329-163609.csv' target='_blank'> 20250329-163609</a></td>
+      <td><a href='data/20250329-163609/20250329-163609_1.png' target='_blank'><img src='data/20250329-163609/20250329-163609_1.png' width='300' target='_blank' /></a></td>
+      <td>full (1param)</td>
+      <td>1</td>
+      <td>15000</td>
+      <td>40000.0</td>
+      <td>24_30_36_42</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>573</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td><a href='data/20250329-164419/20250329-164419.csv' target='_blank'> 20250329-164419</a></td>
+      <td><a href='data/20250329-164419/20250329-164419_1.png' target='_blank'><img src='data/20250329-164419/20250329-164419_1.png' width='300' target='_blank' /></a></td>
+      <td>full (1param)</td>
+      <td>2</td>
+      <td>15000</td>
+      <td>40000.0</td>
+      <td>24_30_36_42</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>573</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td><a href='data/20250329-165509/20250329-165509.csv' target='_blank'> 20250329-165509</a></td>
+      <td><a href='data/20250329-165509/20250329-165509_1.png' target='_blank'><img src='data/20250329-165509/20250329-165509_1.png' width='300' target='_blank' /></a></td>
+      <td>full (1param)</td>
+      <td>5</td>
+      <td>15000</td>
+      <td>40000.0</td>
+      <td>24_30_36_42</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>573</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td><a href='data/20250329-170651/20250329-170651.csv' target='_blank'> 20250329-170651</a></td>
+      <td><a href='data/20250329-170651/20250329-170651_1.png' target='_blank'><img src='data/20250329-170651/20250329-170651_1.png' width='300' target='_blank' /></a></td>
+      <td>full (1param)</td>
+      <td>6</td>
+      <td>15000</td>
+      <td>40000.0</td>
+      <td>24_30_36_42</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>573</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td><a href='data/20250329-200040/20250329-200040.csv' target='_blank'> 20250329-200040</a></td>
+      <td><a href='data/20250329-200040/20250329-200040_1.png' target='_blank'><img src='data/20250329-200040/20250329-200040_1.png' width='300' target='_blank' /></a></td>
+      <td>star</td>
+      <td>0</td>
+      <td>15000</td>
+      <td>40000.0</td>
+      <td>25_36_49_64</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>573</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td><a href='data/20250329-202333/20250329-202333.csv' target='_blank'> 20250329-202333</a></td>
+      <td><a href='data/20250329-202333/20250329-202333_1.png' target='_blank'><img src='data/20250329-202333/20250329-202333_1.png' width='300' target='_blank' /></a></td>
+      <td>star</td>
+      <td>0</td>
+      <td>75000</td>
+      <td>200000.0</td>
+      <td>25_36_49_64</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>573</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td><a href='data/20250329-203818/20250329-203818.csv' target='_blank'> 20250329-203818</a></td>
+      <td><a href='data/20250329-203818/20250329-203818_1.png' target='_blank'><img src='data/20250329-203818/20250329-203818_1.png' width='300' target='_blank' /></a></td>
+      <td>star</td>
+      <td>0</td>
+      <td>150000</td>
+      <td>400000.0</td>
+      <td>25_36_49_64</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>573</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td><a href='data/20250329-205430/20250329-205430.csv' target='_blank'> 20250329-205430</a></td>
+      <td><a href='data/20250329-205430/20250329-205430_1.png' target='_blank'><img src='data/20250329-205430/20250329-205430_1.png' width='300' target='_blank' /></a></td>
+      <td>star</td>
+      <td>1</td>
+      <td>150000</td>
+      <td>400000.0</td>
+      <td>25_36_49_64</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>573</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td><a href='data/20250329-211135/20250329-211135.csv' target='_blank'> 20250329-211135</a></td>
+      <td><a href='data/20250329-211135/20250329-211135_1.png' target='_blank'><img src='data/20250329-211135/20250329-211135_1.png' width='300' target='_blank' /></a></td>
+      <td>star</td>
+      <td>2</td>
+      <td>150000</td>
+      <td>400000.0</td>
+      <td>25_36_49_64</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>573</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td><a href='data/20250329-213532/20250329-213532.csv' target='_blank'> 20250329-213532</a></td>
+      <td><a href='data/20250329-213532/20250329-213532_1.png' target='_blank'><img src='data/20250329-213532/20250329-213532_1.png' width='300' target='_blank' /></a></td>
+      <td>star</td>
+      <td>5</td>
+      <td>150000</td>
+      <td>400000.0</td>
+      <td>25_36_49_64</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>573</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td><a href='data/20250329-215915/20250329-215915.csv' target='_blank'> 20250329-215915</a></td>
+      <td><a href='data/20250329-215915/20250329-215915_1.png' target='_blank'><img src='data/20250329-215915/20250329-215915_1.png' width='300' target='_blank' /></a></td>
+      <td>star</td>
+      <td>6</td>
+      <td>150000</td>
+      <td>400000.0</td>
+      <td>25_36_49_64</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>573</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td><a href='data/20250330-093142/20250330-093142.csv' target='_blank'> 20250330-093142</a></td>
+      <td><a href='data/20250330-093142/20250330-093142_1.png' target='_blank'><img src='data/20250330-093142/20250330-093142_1.png' width='300' target='_blank' /></a></td>
+      <td>star</td>
+      <td>0</td>
+      <td>150000</td>
+      <td>400000.0</td>
+      <td>25_36_49_64</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td><a href='data/20250330-094807/20250330-094807.csv' target='_blank'> 20250330-094807</a></td>
+      <td><a href='data/20250330-094807/20250330-094807_1.png' target='_blank'><img src='data/20250330-094807/20250330-094807_1.png' width='300' target='_blank' /></a></td>
+      <td>star</td>
+      <td>1</td>
+      <td>150000</td>
+      <td>400000.0</td>
+      <td>25_36_49_64</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td><a href='data/20250330-100418/20250330-100418.csv' target='_blank'> 20250330-100418</a></td>
+      <td><a href='data/20250330-100418/20250330-100418_1.png' target='_blank'><img src='data/20250330-100418/20250330-100418_1.png' width='300' target='_blank' /></a></td>
+      <td>star</td>
+      <td>2</td>
+      <td>150000</td>
+      <td>400000.0</td>
+      <td>25_36_49_64</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td><a href='data/20250330-102823/20250330-102823.csv' target='_blank'> 20250330-102823</a></td>
+      <td><a href='data/20250330-102823/20250330-102823_1.png' target='_blank'><img src='data/20250330-102823/20250330-102823_1.png' width='300' target='_blank' /></a></td>
+      <td>star</td>
+      <td>5</td>
+      <td>150000</td>
+      <td>400000.0</td>
+      <td>25_36_49_64</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td><a href='data/20250330-105128/20250330-105128.csv' target='_blank'> 20250330-105128</a></td>
+      <td><a href='data/20250330-105128/20250330-105128_1.png' target='_blank'><img src='data/20250330-105128/20250330-105128_1.png' width='300' target='_blank' /></a></td>
+      <td>star</td>
+      <td>6</td>
+      <td>150000</td>
+      <td>400000.0</td>
+      <td>25_36_49_64</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>1</td>
+      <td>124</td>
+    </tr>
+  </tbody>
+</table>
