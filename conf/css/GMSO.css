@@ -1,0 +1,152 @@
+header{
+	width: 940px;
+	height: 10ex;
+	margin: auto auto;
+	font-family: 'Noto Sans JP', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 2.5ex 0 2.5ex 0; 
+	font-size: 30px;
+}
+
+body{
+	background-image :url("../css/GMSO-bg2.JPG");
+	background-size: cover;
+	width: 940px;
+	margin:20px auto;
+}
+
+.wrapper{
+	width: 960px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+section{
+	display:block;
+    -webkit-box-shadow: 0px 0px 4px #666;
+    -moz-box-shadow: 0px 0px 4px #666;
+	padding:20px;
+	margin:5px 0;
+	background-color: #fff;
+}
+section h1{
+	display:block;
+	background: transparent;
+	border-bottom: solid 5px #0099FF;
+	border-top: solid 5px #0099FF;
+	color: black;
+    padding:10px;
+	text-align: center;
+	font-size: 20pt;
+}
+section h2{
+	font-size: 16pt;
+	border-left:solid 5px #0099FF;
+	border-bottom: dashed 1px #0099FF;
+    padding-left:1.5ex;
+    pudding-top:3px;
+    pudding-bottom: 3px;
+    text-align:left;
+}
+section h3{
+	font-size: 16pt;
+	border-bottom: dashed 1px #0099FF;
+    padding-left:1.5ex;
+    pudding-top:3px;
+    pudding-bottom: 3px;
+    text-align:left;
+}
+section p{
+	text-indent: 2ex;
+}
+
+section p#footer{
+	font-size: 90%;
+	text-align: right;
+}
+section table{
+	text-indent: 2ex;
+}
+section td{
+	vertical-align:top;
+}
+span#small{
+	font-size: 10pt;
+}
+footer{
+	clear:both !important;
+	padding:10px;
+	margin:5px;
+	font-size:1em;
+	text-align:center;
+	color:#fff;
+}
+footer p{
+	font-size: 0.8em;
+}
+
+li{
+	margin-bottom: 5pt;
+}
+
+td.list{
+	vertical-align: middle;
+	font-size: 7px;
+}
+
+dt{
+	margin: auto auto auto 40px;
+	font-weight: bold;
+}
+
+li.second{
+	margin: 5px 0;
+}
+
+.intable{
+	margin: 0 0 0 50px;
+}
+
+ul{
+  margin-top:-5px;
+}
+
+ul.sponsor{
+	margin-top: 5px;
+}
+
+ul.second{
+	margin-top: 5px;
+}
+
+ul.secondsmall{
+	margin-top: 5px;
+	font-size: 70%;
+}
+
+ul.small{
+	margin:5px 10px;
+	font-size:80%;
+}
+
+tbody{
+	-webkit-text-size-adjust: 100%;
+}
+
+
+.square_btn {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 1.0em 3.0em 1.0em 3.0em;
+    margin: 0 0 2.5em;
+    width: 18.0em;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #000000;
+    background: lightgrey;
+    transition: .4s;
+}
